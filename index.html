@@ -1,0 +1,31 @@
+<!doctype HTML>
+
+<head>
+    <title>Password Score</title>
+    <script src="PasswordScore.js">
+    </script>
+
+    <script>
+        function revealPassword() {
+            var input = document.getElementById("passwordInput");
+            if (input.type === "password")
+                input.type = "text";
+            else
+                input.type = "password";
+            }
+    </script>
+
+    <script>
+        function checkScore() {
+            document.getElementById("score").innerHTML = "Password Score: " + passwordScore(document.getElementById("passwordInput").value) + "/6";
+        }
+    </script>
+
+</head>
+
+<body>
+    <input id="passwordInput" type="password" placeholder="Enter password">
+    <input type="checkbox" onclick="revealPassword()">Show Password
+    <button onclick="checkScore()">Check Password Strength</button>
+    <p id="score"></p>
+</body>
