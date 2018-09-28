@@ -1,5 +1,7 @@
 # PasswordStrength
-A simple JavaScript library to check the strength of passwords.
+A simple JavaScript library to check the strength of passwords.  
+
+Developed as part of Advanced Internet Programming Assignment 2.
 ## Why PasswordStrength?
 Complex password rules make remembering passwords difficult or make users create passwords that are simple and easy to guess. New research (some of which can be found [here](https://pages.nist.gov/800-63-3/sp800-63b.html)) has shown the need to rethink password requirements. This library is a step in this direction.  
 
